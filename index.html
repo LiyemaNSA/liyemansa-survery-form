@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>LiyemaNSA Survey Form</title>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+  </head>
+
+  <body>
+    <h1 id="title">LiyemaNSA Survey Form</h1>
+    <p id="description">I made this somehow</p>
+    
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name<input placeholder="email" id="name" name="name-label" type="text" required></input>
+        <label for="email" id="email-label">Email<input placeholder="email" id="email" name="email"type="email" required></input>
+        <label for="number" id="number-label" >Rate this out of 10<input placeholder="email" id="number" name="number" type="number" required min="1" max="10"></label>
+      </fiedset>
+
+      <fieldset>
+        <label for="grade">What would you grade this
+          <select id="dropdown">
+            <option id="">Select an option</option>
+            <option id="1">A++</option>
+            <option id="2">A+</option>
+            <option id="3">A</option>
+          </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>How good is this</legend>
+        <label for="great"><input id="great" name="rating" type="radio" value="great" class="inline" checked>Great!</label>
+        <label for="amazing"><input id="amazing" name="rating" type="radio" value="amazing" class="inline">Amazing!!!</label>
+
+        <legend>Are you well?</legend>
+        <label for="yes"><input id="yes" name="well" type="checkbox" value="well" class="inline" checked>Great!</label>
+        <label for="no"><input id="no" name="well" type="checkbox" value="well" class="inline">Amazing!!!</label>
+
+      </fieldset>
+
+      <fieldset>
+        <label for="comment">What did I get wrong<textarea id="comment" name="comment" rows="3" cols="30" placeholder="I love this Survey Form"></textarea></input>
+      </fieldset>
+      <input id="submit" type="submit" value="submit">
+    </form>
+
+  </body>
+  
+  <footer>
+  </footer>
+</html>
